@@ -1,7 +1,7 @@
 {
   "name": "barbershop",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://nikgosu.github.io/basrbershop-gh-pages/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.9.0",
