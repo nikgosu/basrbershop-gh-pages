@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.main-image {
+    background: linear-gradient( rgba(5, 5, 5, 0.7), rgba(0, 0, 0, 0.63)), url("../assets/images/wallpaperflare.com_wallpaper.jpg") center/cover no-repeat;
+    width: 100vw;
+    height: 100dvh;
+}
+.App {
+    height: 500vh;
+}
+@media (max-width:480px) {
+    .main-image {
+        background-position-x: 30%;
+    }
+}
+
+.blob.yellow {
+    background: rgba(255, 177, 66, 1);
+    box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);
+    animation: pulse-yellow 2s infinite;
+}
+
+@keyframes pulse-orange {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 121, 63, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 121, 63, 0)
+    }
+}
+
+@keyframes arrow-jumping {
+    0% {
+        transform: translateX(-50%) translateY(0) rotate(90deg);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0) rotate(90deg);
+    }
+}
