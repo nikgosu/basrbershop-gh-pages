@@ -8,7 +8,7 @@ const AboutScreen = () => {
     return (
         <Paper
             sx={{
-                padding: {xs: '2% 0 50%', sm: '2% 5% 50%', md: '6% 2% 27%', lg: '6% 18% 27%'}
+                padding: {xs: '2% 0 44%', sm: '2% 5% 44%', md: '6% 2% 27%', lg: '6% 18% 27%'}
             }}
         >
             <Box

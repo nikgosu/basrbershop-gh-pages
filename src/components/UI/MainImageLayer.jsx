@@ -10,7 +10,7 @@ const MainImageLayer = ({children}) => {
                 display: 'flex',
                 justifyContent: {xs: 'center', sm: 'center', md: 'end', lg: 'center'},
                 alignItems: 'center',
-                zIndex: 999
+                zIndex: 9
             }}
         >
             {children}

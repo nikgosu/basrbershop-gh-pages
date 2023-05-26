@@ -9,6 +9,7 @@ import MastersScreen from "../components/MastersScreen/MastersScreen";
 import Map from "../components/Map/Map";
 import Footer from "../components/Footer/Footer";
 import HorizontalNavBar from "../components/HorizontalNavBar";
+import BookingButton from "../components/UI/BookingButton";
 
 const Home = () => {
 
@@ -19,6 +20,7 @@ const Home = () => {
                 <NavBar/>
                 <FirstScreen/>
             </MainImageLayer>
+            <BookingButton/>
             <AboutScreen/>
             <LookbookScreen/>
             <ServicesScreen/>

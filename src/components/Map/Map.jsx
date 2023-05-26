@@ -41,15 +41,15 @@ const Map = () => {
         setMap(null)
     }, [])
 
-    const intervalId = setInterval(() => {
-        if (document.querySelector('.gm-svpc') && isMobileWidth) {
-            document.querySelector('.gm-svpc').style.display = 'none'
-            clearInterval(intervalId)
-        }
-    }, 100)
 
     return isLoaded ? (
-        <Box>
+        <Box
+            sx={{
+                '.gm-style': {
+                    zIndex: '10!important'
+                }
+            }}
+        >
             <Typography
                 id={'contacts'}
                 sx={{

@@ -16,8 +16,8 @@ const MastersScreen = () => {
                     margin: '0 auto',
                     width: {xs: 'auto', sm: 'auto', md: 'max-content', lg: 'max-content'},
                     mb: 8,
-                    mt: 16,
-                    padding: '0 15%'
+                    mt: {xs: 12, sm: 12, md: 16, lg: 16},
+                    padding: '0 13%'
                 }}
             >
                 <Typography

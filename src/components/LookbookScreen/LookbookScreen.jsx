@@ -23,7 +23,7 @@ const LookbookScreen = () => {
         <Box
             id={'lookbook'}
             sx={{
-                transform: 'translateY(-28%)',
+                transform: {xs: 'translateY(-18%)', sm: 'translateY(-22%)', md: 'translateY(-28%)', lg: 'translateY(-28%)'},
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',

@@ -25,24 +25,30 @@ const ServicesScreen = () => {
                     width: {xs: '90%', sm: '90%', md: '641px', lg: '641px'}
                 }}
             >
-                <Typography
-                    mb={2}
+                <Box
                     sx={{
-                        fontSize: {xs: 30, sm: 46, md: 46, lg: 46},
-                        fontWeight: 800
-                    }}
-                    className={'services'}
-                >
-                    Наші послуги
-                </Typography>
-                <Typography
-                    mb={10}
-                    sx={{
-                        fontSize: {xs: 16, sm: 21, md: 21, lg: 21}
+                        ml: {xs: '29px', sm: 0, md: 0, lg: 0}
                     }}
                 >
-                    Те, що ми робимо найкраще
-                </Typography>
+                    <Typography
+                        mb={2}
+                        sx={{
+                            fontSize: {xs: 30, sm: 46, md: 46, lg: 46},
+                            fontWeight: 800
+                        }}
+                        className={'services'}
+                    >
+                        Наші послуги
+                    </Typography>
+                    <Typography
+                        mb={10}
+                        sx={{
+                            fontSize: {xs: 16, sm: 21, md: 21, lg: 21}
+                        }}
+                    >
+                        Те, що ми робимо найкраще
+                    </Typography>
+                </Box>
                 <Box>
                     {SERVICES.map(service => (
                         <Card
@@ -50,7 +56,7 @@ const ServicesScreen = () => {
                             sx={{
                                 background: '#030303',
                                 border: '2px solid white',
-                                mb: 2
+                                mb: 2,
                             }}
                         >
                             <CardActionArea

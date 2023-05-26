@@ -20,7 +20,6 @@ const MainScreenButtons = () => {
         <>
             <PhoneNumber/>
             <LocationButton/>
-            <BookingButton/>
             <MainSocialIcons sx={socialIconsSx}/>
         </>
     );
