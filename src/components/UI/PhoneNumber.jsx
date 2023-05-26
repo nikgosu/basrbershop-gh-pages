@@ -10,12 +10,12 @@ const PhoneNumber = () => {
                 top: '2%',
                 right: '3%',
                 color: 'rgba(234,234,234,0.9)',
-                fontSize: 20
+                fontSize: 20,
             }}
         >
             <a
             href="tel:+38 067 86 42 108"
-            style={{textDecoration: 'none', color: 'inherit'}}
+            style={{textDecoration: 'none', color: 'inherit', cursor: 'pointer'}}
             >
                 +38 067 86 42 108
             </a>

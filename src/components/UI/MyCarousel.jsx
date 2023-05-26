@@ -23,7 +23,7 @@ const MyCarousel = ({currentPhotoIndex, children, setCurrentPhotoIndex, arr}) =>
 		return function cleanup() {
 			document.removeEventListener("keydown", handleKeyPress);
 		};
-	});
+	}, []);
 
 	return (
 		<Box

@@ -1,13 +1,14 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
 import {MASTERS} from "../../consts/masters";
 import Typography from "@mui/material/Typography";
 
 
 const MastersImageList = () => {
+
+    const mastersArray = useMemo(() => MASTERS, [])
+
     return (
         <ImageList
             sx={{
@@ -22,7 +23,7 @@ const MastersImageList = () => {
                     height: {xs: '50dvh!important', sm: '65dvh!important', md: '65dvh!important', lg: '65dvh!important'},
                     position: 'relative',
                     'img': {
-                        height: '100%!important'
+                        height: '100%!important',
                     }
                 }}>
                     <Typography
@@ -41,7 +42,7 @@ const MastersImageList = () => {
                         src={`${master.src}?w=248&fit=crop&auto=format`}
                         srcSet={`${master.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
                         alt={master.name}
-                        loading="eager"
+                        loading="lazy"
                     />
                 </ImageListItem>
             ))}

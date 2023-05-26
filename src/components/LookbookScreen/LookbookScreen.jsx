@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import MasonryImageList from "./MasonryImageList";
@@ -11,6 +11,8 @@ const LookbookScreen = () => {
 
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0)
     const [isOpen, setIsOpen] = useState(false)
+    const lookbookImagesArray = useMemo(() => LOOKBOOK_IMAGES, [])
+
     const handleOpen = () => setIsOpen(true)
     const handleClose = () => setIsOpen(false)
 
@@ -72,7 +74,7 @@ const LookbookScreen = () => {
                     Ми робимо вас кращою версією себе
                 </Typography>
             </Box>
-            <MasonryImageList imgArray={LOOKBOOK_IMAGES} onPhotoClick={handlePhotoClick}/>
+            <MasonryImageList imgArray={lookbookImagesArray} onPhotoClick={handlePhotoClick}/>
             <MyModal
                 isOpen={isOpen}
                 onClose={handleClose}
@@ -80,9 +82,9 @@ const LookbookScreen = () => {
                 <MyCarousel
                     setCurrentPhotoIndex={setCurrentPhotoIndex}
                     currentPhotoIndex={currentPhotoIndex}
-                    arr={LOOKBOOK_IMAGES}
+                    arr={lookbookImagesArray}
                 >
-                    {LOOKBOOK_IMAGES.map((image, i) =>
+                    {lookbookImagesArray.map((image, i) =>
                         <Box
                             key={image}
                             hidden={i !== currentPhotoIndex}

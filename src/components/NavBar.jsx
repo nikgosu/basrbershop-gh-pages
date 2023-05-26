@@ -166,7 +166,8 @@ export const NavBar = () => {
                             sx={{
                                 display: { xs: 'none', md: 'flex' },
                                 flexGrow: 1,
-                                textAlign: 'center'
+                                textAlign: 'center',
+                                cursor: 'pointer'
                             }}
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth'})}
                         >
@@ -298,7 +299,7 @@ export const NavBar = () => {
                                             sx={{
                                                 padding: '0 16px',
                                                 textAlign: 'start',
-                                                mb: 2
+                                                mb: 2,
                                             }}
                                         >
                                             <a

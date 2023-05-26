@@ -46,7 +46,8 @@ const BookingButton = () => {
                     width: '2em',
                     height: '2em',
                     color: 'black',
-                    fontSize: {xs: '1.675rem', sm: '1.675rem', md: '2.1875rem', lg: '2.1875rem'}
+                    fontSize: {xs: '1.675rem', sm: '1.675rem', md: '2.1875rem', lg: '2.1875rem'},
+                    cursor: 'pointer'
                 }}/>
             </Box>
         </Box>
