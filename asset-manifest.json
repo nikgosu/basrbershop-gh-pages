@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/basrbershop-gh-pages/static/css/main.b4b01c98.css",
-    "main.js": "/basrbershop-gh-pages/static/js/main.6c53866c.js",
+    "main.js": "/basrbershop-gh-pages/static/js/main.c8fb9d92.js",
     "static/js/787.e5c78bf7.chunk.js": "/basrbershop-gh-pages/static/js/787.e5c78bf7.chunk.js",
     "static/media/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg": "/basrbershop-gh-pages/static/media/agustin-fernandez-1Pmp9uxK8X8-unsplash.75429f609ffe76949d44.jpg",
     "static/media/arthur-humeau-pu20JkUx--A-unsplash.jpg": "/basrbershop-gh-pages/static/media/arthur-humeau-pu20JkUx--A-unsplash.00558960eefa87517d2b.jpg",
@@ -20,11 +20,11 @@
     "static/media/8____.svg": "/basrbershop-gh-pages/static/media/8____.d65ebf580ce6b604708f32f234d26a1d.svg",
     "index.html": "/basrbershop-gh-pages/index.html",
     "main.b4b01c98.css.map": "/basrbershop-gh-pages/static/css/main.b4b01c98.css.map",
-    "main.6c53866c.js.map": "/basrbershop-gh-pages/static/js/main.6c53866c.js.map",
+    "main.c8fb9d92.js.map": "/basrbershop-gh-pages/static/js/main.c8fb9d92.js.map",
     "787.e5c78bf7.chunk.js.map": "/basrbershop-gh-pages/static/js/787.e5c78bf7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4b01c98.css",
-    "static/js/main.6c53866c.js"
+    "static/js/main.c8fb9d92.js"
   ]
 }
