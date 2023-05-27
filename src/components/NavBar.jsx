@@ -66,7 +66,7 @@ export const NavBar = () => {
         const section = document.getElementById( `${id}`);
         let position = section.offsetTop
         if (id === 'lookbook') {
-            position = position - (isThousandWidth ? section.offsetHeight - 70 : section.offsetHeight) / 100 * 30
+            position = position - (isThousandWidth ? section.offsetHeight - 70 : section.offsetHeight - 150) / 100 * 30
         }
         window.scrollTo({ top: isThousandWidth ? position - 70 : position, behavior: 'smooth'});
     };

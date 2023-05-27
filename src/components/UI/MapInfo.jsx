@@ -15,7 +15,8 @@ const MapInfo = () => {
                 transform: 'translateY(-50%)',
                 background: '#000',
                 borderRadius: '10px',
-                padding: 5
+                padding: 5,
+                zIndex: 13
             }}
         >
             <Typography

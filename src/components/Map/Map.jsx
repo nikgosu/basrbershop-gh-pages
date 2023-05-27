@@ -3,7 +3,6 @@ import {GoogleMap, useJsApiLoader} from "@react-google-maps/api";
 import {GOOGLE_MAPS_API_KEY} from "../../consts/googleApiKey";
 import { Marker } from '@react-google-maps/api';
 import {useMediaQuery} from "@mui/material";
-import {useIsInViewport} from "../../hooks/useIsInViewport";
 import MapInfo from "../UI/MapInfo";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -20,6 +19,7 @@ const center = {
 };
 
 const Map = () => {
+
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: GOOGLE_MAPS_API_KEY

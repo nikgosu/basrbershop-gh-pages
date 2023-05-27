@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useLayoutEffect} from 'react';
 import {NavBar} from "../components/NavBar";
 import MainImageLayer from "../components/UI/MainImageLayer";
 import FirstScreen from "../components/FirstScreen/FirstScreen";

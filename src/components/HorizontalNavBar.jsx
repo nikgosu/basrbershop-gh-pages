@@ -8,6 +8,7 @@ function HorizontalNavBar({isMenuInViewPort}) {
 
     const [currentScreen, setCurrentScreen] = useState(null)
     const isInViewport = (element) => {
+        if (!element) return
         const rect = element.getBoundingClientRect();
         return (
             rect.top >= 0 &&
@@ -143,15 +144,15 @@ function HorizontalNavBar({isMenuInViewPort}) {
                                     Lookbook
                                 </Button>
                                 <Button
+                                    onClick={() => handleNavClick('/services')}
                                     sx={{
                                         ml: 4,
                                         fontSize: 16,
                                         fontWeight: 600,
-                                        color: currentScreen === 'masters' ? '#be8b60' : 'white'
+                                        color: currentScreen === 'services' ? '#be8b60' : 'white'
                                     }}
-                                    onClick={() => handleNavClick('/masters')}
                                 >
-                                    Майстри
+                                    Послуги
                                 </Button>
                             </Box>
                             <Box
@@ -184,14 +185,14 @@ function HorizontalNavBar({isMenuInViewPort}) {
                                 }}
                             >
                                 <Button
-                                    onClick={() => handleNavClick('/services')}
                                     sx={{
                                         fontSize: 16,
                                         fontWeight: 600,
-                                        color: currentScreen === 'services' ? '#be8b60' : 'white'
+                                        color: currentScreen === 'masters' ? '#be8b60' : 'white'
                                     }}
+                                    onClick={() => handleNavClick('/masters')}
                                 >
-                                    Послуги
+                                    Майстри
                                 </Button>
                                 <Button
                                     sx={{
